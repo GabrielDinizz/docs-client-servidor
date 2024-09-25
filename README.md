@@ -89,9 +89,7 @@ Esse comando criará um arquivo `package.json`, contendo as dependências e algu
 
 Agora você pode criar diversos arquivos, podendo ter diferentes funcionalidades:
 
-<div style="text-align: center;">
-   <img src="https://github.com/user-attachments/assets/b5dc3725-a30d-4624-8149-789fa5bf8dc9" alt="Exemplo de Estrutura de Arquivos" width="300"/>
-</div>
+![Exemplo de Estrutura de Arquivos](https://github.com/user-attachments/assets/b5dc3725-a30d-4624-8149-789fa5bf8dc9)
 
 - **Arquivo `index.js`**
   - Este será o arquivo responsável por executar o projeto, pois está definido como o `main` no `package.json`:
@@ -103,9 +101,7 @@ Agora você pode criar diversos arquivos, podendo ter diferentes funcionalidades
 
 - **Criar Pasta `MODEL`**
   - Esta pasta terá toda a configuração das tabelas do banco de dados. Por exemplo, para a tabela `User`, você terá um arquivo `user.js` contendo as configurações correspondentes: <br>
-<div style="text-align: center;">
-   <img src="https://github.com/user-attachments/assets/5e0e5f17-3f7a-45d3-926c-cb8db802471a" alt="Exemplo de Pasta MODEL" width="300"/>
-</div>
+    ![Exemplo de Pasta `MODEL`](https://github.com/user-attachments/assets/5e0e5f17-3f7a-45d3-926c-cb8db802471a)
 
 - **Criar Arquivo `sync.js`**
   - Este arquivo será responsável pela sincronização das tabelas, criando a referência das tabelas e inicializando-as no banco de dados. Ele será o primeiro arquivo executado no projeto.
@@ -121,27 +117,18 @@ Agora você pode criar diversos arquivos, podendo ter diferentes funcionalidades
 2. No WampServer, inicie o MySQL.
 3. No MySQL, crie o banco de dados necessário:
 
-<div style="text-align: center;">
-   <img src="https://github.com/user-attachments/assets/92207d36-f09b-4149-ba59-e40e58859329" alt="Criando Banco de Dados" width="300"/>
-</div>
+![Criando Banco de Dados](https://github.com/user-attachments/assets/92207d36-f09b-4149-ba59-e40e58859329)
 
 
 ### 4.1. Criar String de Conexão
 
 1. **Obter Informações do Banco de Dados**
    - Primeiro, é necessário saber as informações do banco de dados, como `localhost`, `root`, senha e nome do banco.
-
-<div style="text-align: center;">
-   <img src="https://github.com/user-attachments/assets/5d167a93-f065-466b-a0f9-80d7967f771b" alt="Informações do Banco de Dados" width="300"/>
-</div>
+   - ![Informações do Banco de Dados](https://github.com/user-attachments/assets/5d167a93-f065-466b-a0f9-80d7967f771b)
 
 2. **Configurar a String de Conexão**
    - No arquivo de configuração do banco de dados (pode ser `config`, `bd`, ou o nome que você escolher), insira a string de conexão utilizando Sequelize, um gerenciador de banco de dados para MySQL. Sequelize fornece uma interface de código semelhante ao phpMyAdmin:
-
-<div style="text-align: center;">
-   <img src="https://github.com/user-attachments/assets/14172847-2a49-4f9d-88b4-a4d385093357" alt="Configuração da String de Conexão" width="300"/>
-</div>
-
+     ![Configuração da String de Conexão](https://github.com/user-attachments/assets/14172847-2a49-4f9d-88b4-a4d385093357)
 
 3. **Importação e Exportação no Arquivo `.js`**
    - Como o arquivo é `.js`, você deve importar o Sequelize usando `require`, e não `import`, como é feito nos arquivos React `.jsx`.
@@ -180,10 +167,7 @@ const User = sequelize.define('User', {
 });
 ```
 
-<div style="text-align: center;">
-   <img src="https://github.com/user-attachments/assets/d3e8efbf-c8d7-4ab2-8c49-723d1fea4e08" alt="Exemplo de Model" width="300"/>
-</div>
-
+![Exemplo de Model](https://github.com/user-attachments/assets/d3e8efbf-c8d7-4ab2-8c49-723d1fea4e08)
 
 - [https://sequelize.org/](#link-desejado)Na variável `Sequelize`, importada da pasta `config` (ou `bd`), estamos trazendo a string de conexão com o banco de dados.
 
@@ -206,29 +190,21 @@ const User = sequelize.define('User', {
 ### 5. Após Projeto Pronto
 
 1. Ainda nos terminais, ou se você estiver saindo e entrando novamente em dois terminais (um para o cliente e outro para o servidor), execute o comando npm install tanto no cliente quanto no servidor para instalar as dependências:
-<div style="text-align: center;">
-   <img src="https://github.com/user-attachments/assets/31b7e639-0930-478a-9b0d-cb06a9bb6e62" alt="Instalação das Dependências" width="300"/>
-</div>
-
+2. 
+   ![Instalação das Dependências](https://github.com/user-attachments/assets/31b7e639-0930-478a-9b0d-cb06a9bb6e62)
 
 3. **Instalar Dependências do Cliente**
    - **Instalar Axios**: Utilizado para acessar as rotas do servidor (semelhante ao Fetch):
      ```bash
      npm install axios
      ```
-<div style="text-align: center;">
-   <img src="https://github.com/user-attachments/assets/7994e220-6dc9-4c1d-9665-cd7e67cd946e" alt="Axios" width="300"/>
-</div>
-
+     ![Axios](https://github.com/user-attachments/assets/7994e220-6dc9-4c1d-9665-cd7e67cd946e)
 
    - **Instalar `react-router-dom`**: Para gerenciamento das rotas do cliente.
 
 4. **Instalar Dependências do Servidor**
    - Instalar as seguintes dependências: `cors`, `mysql2`, `sequelize`, `bcryptjs`, `express`:
-<div style="text-align: center;">
-   <img src="https://github.com/user-attachments/assets/bdc23a09-b7e8-41b9-b153-d952b5a6b384" alt="Dependências do Servidor" width="300"/>
-</div>
-
+     ![Dependências do Servidor](https://github.com/user-attachments/assets/bdc23a09-b7e8-41b9-b153-d952b5a6b384)
 
 
 

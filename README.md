@@ -23,7 +23,7 @@
      cd server
      ```
 
-### 1.3. Configuração do Cliente
+### 1.3. Resultado: 
 
 <div style="text-align: center;">
    <img src="https://github.com/user-attachments/assets/03e13e8b-b6f1-416a-abd9-ec4e38dae308" alt="Exemplo de Estrutura de Projeto" width="300"/>

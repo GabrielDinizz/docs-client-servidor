@@ -111,6 +111,10 @@ Agora você pode criar diversos arquivos, podendo ter diferentes funcionalidades
 - **Criar a Pasta `Routes`**
   - Adicione um arquivo, como `Auth.js`, para gerenciar as rotas de autenticação e outras funcionalidades relacionadas.
 
+#### 3.1 Estrutura Final Server
+![image](https://github.com/user-attachments/assets/591ddfb3-9b0f-46e0-9019-879dc5fae04a)
+
+
 ------------------------
 
 ### 4. Criando o Banco de Dados

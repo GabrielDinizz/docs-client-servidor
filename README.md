@@ -50,6 +50,8 @@ Esse comando criará um arquivo `package.json`, contendo as dependências e algu
     npm install react-router-dom
     ```
 
+### 2.3. Instalação de Dependências (Server)
+
 - **Instalar Dependência do Banco de Dados**
   - Para instalar o `mysql2`, execute:
     ```bash

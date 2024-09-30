@@ -125,9 +125,9 @@ Agora você pode criar diversos arquivos, podendo ter diferentes funcionalidades
 
 ![Criando Banco de Dados](https://github.com/user-attachments/assets/92207d36-f09b-4149-ba59-e40e58859329)
 
-4. Se for Sqlite, baixe as dependencias necessárias
+4. Se for Sqlite, baixe as dependencias necessárias e installar a extensão do sqlite
 ![image](https://github.com/user-attachments/assets/ad6ceee0-c62c-44ab-b08c-91da2e27195c)
-
+![image](https://github.com/user-attachments/assets/1be75291-2e21-46f4-b626-03254f1f8aca)
 
 ### 4.1. Criar String de Conexão
 

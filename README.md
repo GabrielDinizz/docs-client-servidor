@@ -200,6 +200,10 @@ const User = sequelize.define('User', {
   ```bash
   node sync.js
 
+- Execute O arquivo principal do servidor:
+  ```bash
+  node .\index.js
+
 -----------------------
 
 ### 5. Após Projeto Pronto

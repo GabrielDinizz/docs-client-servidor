@@ -82,6 +82,12 @@ Esse comando criará um arquivo `package.json`, contendo as dependências e algu
     npm install express
     ```
 
+- **Instalar Dependência Axios**
+  - Para fazer requisições HTTP de forma fácil e eficiente, instale o `axios`:
+    ```bash
+    npm install axios
+    ```
+
 > [!IMPORTANT]
 > Quando estamos trabalhando em um projeto de terceiros, como projetos do GitHub, é essencial verificar o `package.json` para instalar as dependências necessárias e garantir que o projeto funcione corretamente. Vale ressaltar que o `package.json` também é criado no diretório do cliente quando você inicializa o cliente com `npm create vite@latest {client}`, logo também deve ser verificado.
 

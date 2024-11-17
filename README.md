@@ -26,7 +26,6 @@
 ### 1.3. Resultado: 
 
 <div style="text-align: center;">
-   ![image](https://github.com/user-attachments/assets/b5dc3725-a30d-4624-8149-789fa5bf8dc9)
    <img src="https://github.com/user-attachments/assets/03e13e8b-b6f1-416a-abd9-ec4e38dae308" alt="Exemplo de Estrutura de Projeto" width="300"/>
 </div>
 

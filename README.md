@@ -97,7 +97,7 @@ Esse comando criará um arquivo `package.json`, contendo as dependências e algu
 
 Agora você pode criar diversos arquivos, podendo ter diferentes funcionalidades:
 
-![Exemplo de Estrutura de Arquivos](https://github.com/user-attachments/assets/b5dc3725-a30d-4624-8149-789fa5bf8dc9)
+![image](https://github.com/user-attachments/assets/b5dc3725-a30d-4624-8149-789fa5bf8dc9)
 
 - **Arquivo `index.js`**
   - Este será o arquivo responsável por executar o projeto, pois está definido como o `main` no `package.json`:
@@ -109,7 +109,7 @@ Agora você pode criar diversos arquivos, podendo ter diferentes funcionalidades
 
 - **Criar Pasta `MODEL`**
   - Esta pasta terá toda a configuração das tabelas do banco de dados. Por exemplo, para a tabela `User`, você terá um arquivo `user.js` contendo as configurações correspondentes: <br>
-    ![Exemplo de Pasta `MODEL`](https://github.com/user-attachments/assets/5e0e5f17-3f7a-45d3-926c-cb8db802471a)
+    ![image](https://github.com/user-attachments/assets/5e0e5f17-3f7a-45d3-926c-cb8db802471a)
 
 - **Criar Arquivo `sync.js`**
   - Este arquivo será responsável pela sincronização das tabelas, criando a referência das tabelas e inicializando-as no banco de dados. Ele será o primeiro arquivo executado no projeto.
@@ -129,7 +129,7 @@ Agora você pode criar diversos arquivos, podendo ter diferentes funcionalidades
 2. No WampServer, inicie o MySQL.
 3. No MySQL, crie o banco de dados necessário:
 
-![Criando Banco de Dados](https://github.com/user-attachments/assets/92207d36-f09b-4149-ba59-e40e58859329)
+![image](https://github.com/user-attachments/assets/92207d36-f09b-4149-ba59-e40e58859329)
 
 4. Se for Sqlite, baixe as dependencias necessárias e installar a extensão do sqlite
 ![image](https://github.com/user-attachments/assets/ad6ceee0-c62c-44ab-b08c-91da2e27195c)
@@ -139,11 +139,11 @@ Agora você pode criar diversos arquivos, podendo ter diferentes funcionalidades
 
 1. **Obter Informações do Banco de Dados**
    - Primeiro, é necessário saber as informações do banco de dados, como `localhost`, `root`, senha e nome do banco.
-   - ![Informações do Banco de Dados](https://github.com/user-attachments/assets/5d167a93-f065-466b-a0f9-80d7967f771b)
+   - ![image](https://github.com/user-attachments/assets/5d167a93-f065-466b-a0f9-80d7967f771b)
 
 2. **Configurar a String de Conexão**
    - No arquivo de configuração do banco de dados (pode ser `config`, `bd`, ou o nome que você escolher), insira a string de conexão utilizando Sequelize, um gerenciador de banco de dados para MySQL. Sequelize fornece uma interface de código semelhante ao phpMyAdmin:
-     ![Configuração da String de Conexão](https://github.com/user-attachments/assets/14172847-2a49-4f9d-88b4-a4d385093357)
+     ![image](https://github.com/user-attachments/assets/14172847-2a49-4f9d-88b4-a4d385093357)
      ![image](https://github.com/user-attachments/assets/beefd093-3136-4555-bae1-984593399f03)
 
 
@@ -189,14 +189,14 @@ const User = sequelize.define('User', {
 - [https://sequelize.org/](#link-desejado)Na variável `Sequelize`, importada da pasta `config` (ou `bd`), estamos trazendo a string de conexão com o banco de dados.
 
 - A variável `DataTypes` é utilizada para definir o tipo de dado dos atributos. Por exemplo, para o campo `Username`, o tipo pode ser `String`:
-  ![Definição de DataTypes](https://github.com/user-attachments/assets/1bd29f74-6d81-4dcb-a341-cefa681f1de9)
+  ![image](https://github.com/user-attachments/assets/1bd29f74-6d81-4dcb-a341-cefa681f1de9)
 
 - Após definir os tipos de dados, crie os campos da tabela e a própria tabela no arquivo de modelagem.
 
 ### 4.3. Sincronizar a Tabela
 
 - Para criar as tabelas no banco de dados, você deve realizar a sincronização no arquivo de sincronização:
-  ![Exemplo de Sincronização](https://github.com/user-attachments/assets/6cb8f6fc-9a3f-478c-b396-6ba214173508)
+  ![image](https://github.com/user-attachments/assets/6cb8f6fc-9a3f-478c-b396-6ba214173508)
 
 - Após escrever o código no arquivo de sincronização, execute a sincronização com o comando:
   ```bash
@@ -215,20 +215,20 @@ const User = sequelize.define('User', {
 
 1. Ainda nos terminais, ou se você estiver saindo e entrando novamente em dois terminais (um para o cliente e outro para o servidor), execute o comando npm install tanto no cliente quanto no servidor para instalar as dependências:
 2. 
-   ![Instalação das Dependências](https://github.com/user-attachments/assets/31b7e639-0930-478a-9b0d-cb06a9bb6e62)
+   ![image](https://github.com/user-attachments/assets/31b7e639-0930-478a-9b0d-cb06a9bb6e62)
 
 3. **Instalar Dependências do Cliente**
    - **Instalar Axios**: Utilizado para acessar as rotas do servidor (semelhante ao Fetch):
      ```bash
      npm install axios
      ```
-     ![Axios](https://github.com/user-attachments/assets/7994e220-6dc9-4c1d-9665-cd7e67cd946e)
+     ![image](https://github.com/user-attachments/assets/7994e220-6dc9-4c1d-9665-cd7e67cd946e)
 
    - **Instalar `react-router-dom`**: Para gerenciamento das rotas do cliente.
 
 4. **Instalar Dependências do Servidor**
    - Instalar as seguintes dependências: `cors`, `mysql2`, `sequelize`, `bcryptjs`, `express`:
-     ![Dependências do Servidor](https://github.com/user-attachments/assets/bdc23a09-b7e8-41b9-b153-d952b5a6b384)
+     ![image](https://github.com/user-attachments/assets/bdc23a09-b7e8-41b9-b153-d952b5a6b384)
 
 
 

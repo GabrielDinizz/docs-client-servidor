@@ -144,6 +144,8 @@ Agora você pode criar diversos arquivos, podendo ter diferentes funcionalidades
 2. **Configurar a String de Conexão**
    - No arquivo de configuração do banco de dados (pode ser `config`, `bd`, ou o nome que você escolher), insira a string de conexão utilizando Sequelize, um gerenciador de banco de dados para MySQL. Sequelize fornece uma interface de código semelhante ao phpMyAdmin:
      ![Configuração da String de Conexão](https://github.com/user-attachments/assets/14172847-2a49-4f9d-88b4-a4d385093357)
+     ![image](https://github.com/user-attachments/assets/beefd093-3136-4555-bae1-984593399f03)
+
 
 3. **Importação e Exportação no Arquivo `.js`**
    - Como o arquivo é `.js`, você deve importar o Sequelize usando `require`, e não `import`, como é feito nos arquivos React `.jsx`.
@@ -203,6 +205,9 @@ const User = sequelize.define('User', {
 - Execute O arquivo principal do servidor:
   ```bash
   node .\index.js
+
+### 4.4. Estrutura Final
+![image](https://github.com/user-attachments/assets/c61801d5-a1ed-4e86-a795-1c792f47c135)
 
 -----------------------
 
